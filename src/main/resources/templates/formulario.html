@@ -3,9 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario de personas</title>
 </head>
 <body>
+    <h2>INgreso de Datos</h2>
+    <form th:action="@{/procesar}" method="post">
+        <label >Nombre:</label>
+        <input type="text" name="nombre" required>
+
+        <label >Apellido</label>
+        <input type="text" name="apellido" required>
+
+        <label for="">Edad</label>
+        <input type="text" name="edad" required>
+
+        <button type="submit">Enviar</button>
+
+
+    </form>
     
 </body>
 </html>
